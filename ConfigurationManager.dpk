@@ -1,0 +1,47 @@
+package ConfigurationManager;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  dbrtl,
+  DbxCommonDriver;
+
+contains
+  Base.Argument in 'Source\Base\Base.Argument.pas',
+  Base.Converter in 'Source\Base\Base.Converter.pas',
+  Base.Lib in 'Source\Base\Base.Lib.pas',
+  Base.Objects in 'Source\Base\Base.Objects.pas',
+  Base.Objects.Types in 'Source\Base\Base.Objects.Types.pas',
+  Base.Value in 'Source\Base\Base.Value.pas',
+  Tools.Json in 'Source\Tools\Tools.Json.pas',
+  Tools.Path in 'Source\Tools\Tools.Path.pas',
+  Configuration in 'Source\Config\Configuration.pas',
+  Tools.Encryption in 'Source\Tools\Tools.Encryption.pas';
+
+end.
