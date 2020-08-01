@@ -1,2 +1,2 @@
-# delphi-standard-configuration-manager
+# delphi-framework-configuration-manager
 Standard configuration manager
